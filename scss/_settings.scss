@@ -1,0 +1,16 @@
+body {
+    font-family: 'Open Sans';
+}
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: calc(1200px - 130px);
+    }
+    
+}

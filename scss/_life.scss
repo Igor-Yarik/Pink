@@ -1,5 +1,4 @@
 .main__life {
-    background-image: url("../images/header/bg_des.png");
     padding-top: 29px;
     text-align: center;
     align-content: center;
@@ -35,8 +34,9 @@
         background: none;
         border: 3px solid #FFFFFF;
         border-radius: 29px;
-        padding: 21px 39px 21px 38px;
+        padding: 18px 36px 18px 35px;
         margin-bottom: 32px;
+        cursor: pointer;
     }
 
     &_items {
@@ -75,14 +75,99 @@
 
 @media (min-width: 660px) {
     .main__life {
+        position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding-top: 74px;
+        padding-bottom: 119px;
+        height: 619px;
 
-        &
+        &_title {
+            margin-top: 28px;
+            padding-right: 70px;
+            padding-left: 70px;
+            margin-bottom: 0; 
+ 
+        }
+
+        &_img {
+            position: absolute;
+            background-image: url("../images/main/phone_tab.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            left: 0;
+            bottom: 0;
+            height: 545px;
+            z-index: 0;
+
+            
+        }
 
         &_app {
             background: none;
+            padding-top: 39px;
+            padding-bottom: 0;
+            grid-column: 1;
+            grid-row: 2;
+            z-index: 1;
+        }
+
+        &_btn {
+            padding-left: 48px;
+            padding-right: 49px;
+            margin-bottom: 46px;            
+        }
+
+        &_text {
+            margin-top: 38px;
+            font-size: 18px;
         }
     }
     
+}
+
+@media (min-width: 1200px) {
+    .main__life {
+        width: calc(1200px - 260px);
+        margin-right: auto;
+        margin-left: auto;
+        height: auto;
+        padding-top: 0;
+        padding-bottom: 130px;
+        
+
+        &_title {
+            margin-top: 114px;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-bottom: 51px; 
+            width: 300px; 
+        }
+
+        &_img {
+            background-image: url("../images/main/phone_des.png");  
+            height: 645px;  
+    
+    
+        }
+
+        &_app {
+            width: 300px;
+            background: none;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        &_btn {
+            padding: 17px 29px 17px 28px;
+            margin-bottom: 67px;            
+        }
+
+        &_text {
+            margin-top: 58px;
+            padding-right: 0px;
+            padding-left: 0px;
+
+        }
+    }
 }

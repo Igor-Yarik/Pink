@@ -1,5 +1,5 @@
 .header {
-    background: #283645;    
+    background-color: #283645;    
     margin-right: auto;
     margin-left: auto;
 
@@ -69,7 +69,13 @@
 @media (min-width: 1200px) {
 
     .header {
-        background-image: url("../images/header/bg_des.png");
+        background-color: rgba(000, 000, 000, 0.3);
+
+        &__bg {
+            background-image: url("../images/header/bg_des.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
 
     .header .container {

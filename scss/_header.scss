@@ -28,7 +28,7 @@
         height: 23px;
         background: none;
         border: none;
-        background-image: url("/images/header/close_mob.svg");
+        background-image: url("../images/header/close_mob.svg");
     }
 
     &__navigation {
@@ -69,7 +69,7 @@
 @media (min-width: 1200px) {
 
     .header {
-        background-image: url("/images/header/bg_des.png");
+        background-image: url("../images/header/bg_des.png");
     }
 
     .header .container {

@@ -3,14 +3,14 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    min-width: 320px;
     margin-right: auto;
     margin-left: auto;
 }
 
 @media (min-width: 1200px) {
     .container {
-        max-width: calc(1200px - 130px);
+        width: calc(1200px - 260px);
     }
     
 }

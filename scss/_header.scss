@@ -1,13 +1,23 @@
 .header {
-    background-color: #283645;    
+    /* background-color: #283645;     */
     margin-right: auto;
     margin-left: auto;
+
+    background-color: rgba(000, 000, 000, 0.3);
+
+        &__bg {
+            background-image: url("../images/header/bg_tab.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+        }
 
     &__menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 0px 1px 0px #000000;
+        /* box-shadow: 0px 1px 0px #000000; */
         padding: 23px 20px;
     }
 
@@ -33,6 +43,7 @@
 
     &__navigation {
         font-size: 0;
+        display: none;
 
         &_link {
             display: flex;
